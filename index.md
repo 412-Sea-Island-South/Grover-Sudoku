@@ -25,7 +25,7 @@ In particular, there are four conditions we need to check:
 2. v2 ≠ v3 (bottom row)
 3. v0 ≠ v2 (left column)
 4. v1 ≠ v3 (right column)
-We can write this as a **list of clauses**:
+We can write this as a **list of clauses**:  
 ```python
 clause_list=list()
 clause_list.append([0,1])
@@ -65,7 +65,7 @@ Here's a little table to show the XOR gate workings:
   </tr>
 </table>
 This code will help us check our contrainst satisfaction using the XOR gate.
-Notice that the XOR gate is made up of CNOT gates.
+Notice that the XOR gate is made up of CNOT gates.  
 ```python
 def XOR(circuit, a, b, out):
   circuit.cx(a, out)
