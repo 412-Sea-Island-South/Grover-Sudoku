@@ -15,3 +15,5 @@ This example is to demonstrate the conversion of classical [decision problems](h
 <p align="center">
   <img src="https://qiskit.org/textbook/ch-algorithms/images/binary_sudoku.png">
 </p>
+  
+## Creating the Circuit
