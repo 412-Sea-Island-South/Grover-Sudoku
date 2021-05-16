@@ -17,3 +17,50 @@ This example is just to demonstrate the conversion of classical [decision proble
 </p>
   
 ## Creating the Circuit
+We will create an oracle that will help us solve this problem.
+For more information about oracles, you may want to visit **[this page](https://medium.com/nerd-for-tech/grovers-algorithm-3ac4616ce23a)**.
+We just need to create a classical function to help us check if our arrangment \[of variable bits\] is valid.
+In particular, there are four conditions we need to check:
+1. v0 ≠ v1 (top row)
+2. v2 ≠ v3 (bottom row)
+3. v0 ≠ v2 (left column)
+4. v1 ≠ v3 (right column)
+We can write this as a **list of clauses**:
+```python
+clause_list=list()
+clause_list.append([0,1])
+clause_list.append([2,3])
+clause_list.append([0,2])
+clause_list.append([1,3])
+print(clause_list)
+```
+Now to check if the constraints are satisfied, we will use the XOR gate.
+Recall from [here](https://tksmax.github.io/Quantum-Operations) that the XOR gate outputs a 1 (i.e true) if and only if the two inputs two it are different.
+Here's a little table to show the XOR gate workings:
+<table>
+  <tr>
+    <th>Input Qubit 1</th>
+    <th>Input Qubit 2</th>
+    <th>Output></th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+  <tr>
+    <th>0</th>
+    <th>1</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>0</th>
+    <th>1</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>1</th>
+    <th>0</th>
+  </tr>
+</table>
