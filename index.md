@@ -73,3 +73,20 @@ def XOR(circuit, a, b, out):
   circuit.cx(a, out)
   circuit.cx(b, out)
 ```
+  
+### Instantiation
+We will use separate registers to name the bits for clarity.  
+```python
+import matplotlib,pyplot as plt
+import numpy as np
+from qiskit import *
+from qiskit.providers.ibmq import *
+from qiksit.visualization import *
+
+in = QuantumRegister(2, name='in')
+out = QuantumRegister(1, name='out')
+circuit = QuantumCircuit(in, out)
+XOR(circuit, in[0], in[1], out)
+circuit.draw()
+```
+This picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
