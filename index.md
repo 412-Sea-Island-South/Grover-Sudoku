@@ -37,7 +37,7 @@ print(clause_list)
 Now to check if the constraints are satisfied, we will use the XOR gate.
 Recall from [here](https://tksmax.github.io/Quantum-Operations) that the XOR gate outputs a 1 (i.e true) if and only if the two inputs two it are different.
 Here's a little table to show the XOR gate workings:
-<table>
+<table align="center">
   <tr>
     <th>Input Qubit 1</th>
     <th>Input Qubit 2</th>
