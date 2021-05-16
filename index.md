@@ -89,4 +89,4 @@ circuit = QuantumCircuit(in, out)
 XOR(circuit, in[0], in[1], out)
 circuit.draw()
 ```
-This picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
+The first picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
