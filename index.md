@@ -11,7 +11,7 @@ And those are the rules!
   
 We can visualize our binary sudoku like the picture below.
 Obviously, this isn't very pratical because you can probably find the solution instantly in your head.
-This example is to demonstrate the conversion of classical [decision problems](https://en.wikipedia.org/wiki/Decision_problem) into Grover oracles.
+This example is just to demonstrate the conversion of classical [decision problems](https://en.wikipedia.org/wiki/Decision_problem) into Grover oracles.
 <p align="center">
   <img src="https://qiskit.org/textbook/ch-algorithms/images/binary_sudoku.png">
 </p>
