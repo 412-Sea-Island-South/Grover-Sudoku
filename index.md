@@ -90,3 +90,11 @@ XOR(circuit, in[0], in[1], out)
 circuit.draw()
 ```
 The first picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
+<h4 align="center">XOR Circuit</h4>
+<p align="center">
+  <img src="">
+</p>
+<h4 align="center">A Bunch of XORs</h4>
+<p align="center">
+  <img src="">
+</p>
