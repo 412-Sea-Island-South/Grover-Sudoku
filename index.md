@@ -41,7 +41,7 @@ Here's a little table to show the XOR gate workings:
   <tr>
     <th>Input Qubit 1</th>
     <th>Input Qubit 2</th>
-    <th>Output></th>
+    <th>Output</th>
   </tr>
   <tr>
     <th>0</th>
@@ -64,3 +64,10 @@ Here's a little table to show the XOR gate workings:
     <th>0</th>
   </tr>
 </table>
+This code will help us check our contrainst satisfaction using the XOR gate.
+Notice that the XOR gate is made up of CNOT gates.
+```python
+def XOR(circuit, a, b, out):
+  circuit.cx(a, out)
+  circuit.cx(b, out)
+```
