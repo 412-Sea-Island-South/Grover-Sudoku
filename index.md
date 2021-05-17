@@ -120,3 +120,21 @@ You haven't seen the *whole* circuit.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81530826/118533456-f302e880-b6fc-11eb-948f-5225aef7d56e.png">
 </p>
+  
+The final state of the clause qubit will only be a **1** if the corresponding values of **v0, v1, v2, v3** are solutions to the sudoku.
+We want a single bit to be **1** if and only if all the constraints are satisfied, this way we can be lazy and just check one bit to validate the solution.
+To do this, we use a **multi-controlled Toffoli gate**.
+```python
+variables = QuantumRegister(4, name='variable')
+clauses = QuantumRegister(4, name='clause')
+out = QuantumRegister(1, name='out')
+circuit = QuantumCircuit(variables, clauses, out)
+
+counter = 0
+for clause in clause_list:
+  XOR(circuit, clause[0], clause[1], clauses[1])
+  i+=1
+ 
+ circuit.mct(clauses, out)
+ qc.draw()
+ ```
