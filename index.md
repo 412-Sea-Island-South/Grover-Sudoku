@@ -138,3 +138,14 @@ for clause in clause_list:
  circuit.mct(clauses, out)
  qc.draw()
  ```
+  
+### Uncomputing, The Oracle, and The Solution
+With everything out of the way, we can now yeet this circuit into oblivion, and turn it into a Grover oracle using [phase kickback](https://qiksit.org/textbook/ch-gates/phase-kickback.html).
+As a quick summary:
+1. The first register stores our sudoku variables (in reverse order, so **v3, v2, v1, v0***)
+2. The second register stores our clauses, starting in the state |0000⟩
+3. The one qubit/register to store the output
+  
+And now, for some very sophisticated math.  
+We want out circuit to do the following transformation:  
+<img src="https://render.githubusercontent.com/render/math?math=?U_\omega|x\rangle|0\rangle=|x\rangle|0\rangle|out_0\bigoplusf(x)\rangle">
