@@ -92,7 +92,7 @@ circuit.draw()
 The first picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
 <h4 align="center">XOR Circuit</h4>
 <p align="center">
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/81530826/118532528-e9c54c00-b6fb-11eb-9199-313e9bb8ae3f.png">
 </p>
 <h4 align="center">A Bunch of XORs</h4>
 <p align="center">
