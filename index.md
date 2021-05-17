@@ -151,4 +151,6 @@ We want out circuit to do the following transformation:
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}U_\omega|x\rangle|0\rangle=|x\rangle|0\rangle|out_0\bigoplus f(x)\rangle">.
 If we set the qubit <img src="https://render.githubusercontent.com/render/math?math=\color{white}out_0"> to the superposition state
 <img src="https://render.githubusercontent.com/render/math?math=\color{white}|\minus\rangle">, we have:
-<img src="https://render.githubusercontent.com/render/math?math=\color{white}U_{\omega}|x\rangle|0\rangle|\minus\rangle = U_{\omega}|x\rangle|0\rangle\bigoplsus\frac{1}{\sqrt{2}}(|0\rangle \plus |1\rangle) = |x\rangle|0\rangle\bigoplus\frac{1}{\sqrt{2}}(|0\bigoplus f(f)\rangle - |1\bigoplus f(x)\rangle)">
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=\color{white}U_{\omega}|x\rangle|0\rangle|-\rangle = U_{\omega}|x\rangle|0\rangle\bigoplus\frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |x\rangle|0\rangle\bigoplus\frac{1}{\sqrt{2}}(|0\bigoplus f(x)\rangle - |1\bigoplus f(x)\rangle)">
+</p>
