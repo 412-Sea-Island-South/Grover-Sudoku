@@ -118,5 +118,5 @@ If it looks very convoluted to you right now, just wait until later.
 You haven't seen the *whole* circuit.
 <h4 align="center">A Bunch of XORs</h4>
 <p align="center">
-  <img src="">
+  <img src="https://user-images.githubusercontent.com/81530826/118533456-f302e880-b6fc-11eb-948f-5225aef7d56e.png">
 </p>
