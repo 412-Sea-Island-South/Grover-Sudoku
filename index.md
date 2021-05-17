@@ -89,11 +89,33 @@ circuit = QuantumCircuit(in, out)
 XOR(circuit, in[0], in[1], out)
 circuit.draw()
 ```
-The first picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**, to get something which looks like the second picture.
+The first picture shows how we'll use the XOR gate: We'll apply the XOR to each clause in the **list of clauses**.
 <h4 align="center">XOR Circuit</h4>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81530826/118532528-e9c54c00-b6fb-11eb-9199-313e9bb8ae3f.png">
 </p>
+  
+This code will allow us to make all the XOR gates and whatnot to make sure our solution is actually a solution.
+```python
+# Create separate registers to name bits
+variable = QuantumRegister(4, name='variable')  
+clause = QuantumRegister(4, name='clause')  
+
+# Create quantum circuit
+qc = QuantumCircuit(variable, clause)
+
+# Use XOR gate to check each clause
+i = 0
+for clause in clause_list:
+    XOR(qc, clause[0], clause[1], clause_qubits[i])
+    i += 1
+
+qc.draw()
+```
+  
+After all those XOR gates, we get something like this:  
+If it looks very convoluted to you right now, just wait until later.
+You haven't seen the *whole* circuit.
 <h4 align="center">A Bunch of XORs</h4>
 <p align="center">
   <img src="">
